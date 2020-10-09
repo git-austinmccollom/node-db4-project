@@ -1,6 +1,5 @@
 const express = require('express');
 const helmet = require('helmet');
-const db = require('./database/connection.js');
 
 const server = express();
 server.use(helmet());

@@ -5,21 +5,21 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('ingredient').insert([
-        {ingredient_name: 'Jasmine Rice'},
-        {ingredient_name: 'Black Beans'},
-        {ingredient_name: 'Garbanzo Beans'},
-        {ingredient_name: 'Peppers'},
-        {ingredient_name: 'Onions'},
+        {ingredient_name: 'Cup of Jasmine Rice'},
+        {ingredient_name: 'Can of Black Beans'},
+        {ingredient_name: 'Can of Garbanzo Beans'},
+        {ingredient_name: 'Pepper'},
+        {ingredient_name: 'Onion'},
         {ingredient_name: 'Fajita Seasoning Packet'},
-        {ingredient_name: 'Cholula'},
-        {ingredient_name: 'Coconut Milk'},
-        {ingredient_name: 'Curry Paste'},
-        {ingredient_name: 'Curry Powder'},
-        {ingredient_name: 'Ginger'},
-        {ingredient_name: 'Garlic'},
-        {ingredient_name: 'Spinach'},
-        {ingredient_name: 'Salt'},
-        {ingredient_name: 'Crushed Tomatoes'}
+        {ingredient_name: 'Tablespoon of Cholula'},
+        {ingredient_name: 'Can of Coconut Milk'},
+        {ingredient_name: 'Tablespoon of Curry Paste'},
+        {ingredient_name: 'Tablespoon of Curry Powder'},
+        {ingredient_name: 'Tablespoon of Ginger'},
+        {ingredient_name: 'Tablespoon of Garlic'},
+        {ingredient_name: 'Cup Spinach'},
+        {ingredient_name: 'Teaspoon of Salt'},
+        {ingredient_name: 'Can of Crushed Tomatoes'}
       ]);
     });
 };
