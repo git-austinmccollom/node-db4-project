@@ -25,6 +25,16 @@ server.get("/api/recipes/:id/shoppingList", (req, res) => {
       .catch((dbErr) => {
         res.status(500).json(dbErr);
       });
+});
+
+server.get("/api/recipes/:id/instructions", (req, res) => {
+    dbFun.getInstructions(req.params.id)
+    .then((dbRes) => {
+        res.status(200).json(dbRes);
+      })
+      .catch((dbErr) => {
+        res.status(500).json(dbErr);
+      });
 })
 
 server.get("/", (req, res) => {
